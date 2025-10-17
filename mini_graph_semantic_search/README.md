@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/faiss/faiss.png" alt="FAISS logo" width="110"/>
   <h1 align="center">Mini Semantic Search Graph</h1>
   <p align="center"><b>Experimental Semantic Search App using OpenAI + FAISS HNSW</b></p>
 </p>
