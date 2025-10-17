@@ -36,11 +36,13 @@ It includes:
 
 ---
 
-## 🧠 Example Usage (Python)
+## 🧠 Example Usage (Run in Colab)
+
+Run the following commands directly in a Google Colab cell or Jupyter notebook:
 
 ```python
-from genai_client import init_client, generate_tags
+!git clone https://github.com/Panos997/AI.git
+%cd AI/auto_tagging_generator
 
-client = init_client("YOUR_GEMINI_API_KEY")
-tags = generate_tags(client, "The European Union introduced new AI regulations.")
-print(tags)
+from AI.auto_tagging_generator.ui import run_app
+run_app()
