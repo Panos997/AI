@@ -1,23 +1,26 @@
 # 🧠 AI Auto Tagging Generator
 
-An **AI-powered tagging tool** that automatically generates relevant tags for text or article content using **Google’s Gemini GenAI API**.  
-It’s designed for use in **content classification**, **SEO**, and **editorial automation** workflows.
+An **AI-powered tagging tool** that automatically generates relevant tags for article or text content using **Google’s Gemini GenAI API**.  
+Ideal for **content management**, **SEO**, and **automated classification** workflows.
 
 ---
 
 ## 🚀 Overview
 
-This project reads an article or paragraph of text and produces meaningful tags using the `gemini-2.5-flash` model.  
-It includes a Python module for programmatic use and a simple UI for interactive testing.
+This project reads a text or article and produces a list of relevant tags using the `gemini-2.5-flash` model.  
+It includes:
+- A Python client for interacting with the Gemini API  
+- A lightweight UI for testing tag generation  
+- A ready-to-run Colab setup  
 
 ---
 
 ## ⚙️ How It Works
 
-1. The Gemini client is initialized with your API key.  
-2. The article text is passed to the model.  
-3. The model responds with a JSON list of tags.  
-4. Tags are cleaned, deduplicated, and limited to your specified maximum count.
+1. Initializes a Gemini client with your API key.  
+2. Sends the article text to the model with a tagging prompt.  
+3. Receives structured JSON containing tag suggestions.  
+4. Cleans and deduplicates the tags before returning them.
 
 ---
 
@@ -25,11 +28,11 @@ It includes a Python module for programmatic use and a simple UI for interactive
 
 | File | Description |
 |------|--------------|
-| **Code.ipynb** | Example Jupyter/Colab notebook for testing the generator interactively. |
-| **genai_client.py** | Core logic for initializing the Gemini API client, validating keys, and generating tags. |
-| **requirements.txt** | Lists all Python dependencies required to run the app. |
-| **styles.py** | Contains style definitions (colors, layout, fonts) for the user interface. |
-| **ui.py** | Launches a small UI that allows you to input article text and see generated tags visually. |
+| **Code.ipynb** | Jupyter/Colab notebook for quick testing and demos. |
+| **genai_client.py** | Core script for initializing the Gemini client, validating keys, and generating tags. |
+| **requirements.txt** | List of dependencies required for the app. |
+| **styles.py** | Contains color, layout, and font settings for the UI. |
+| **ui.py** | Simple UI layer that runs the tag generator interactively. |
 
 ---
 
