@@ -9,14 +9,18 @@
 
 **Mini Semantic Search Graph** is an **experimental project** built during internal R&D testing.  
 We started with a **small base of clustered keywords**, each cluster representing a thematic category.  
-Initially, we tried **semantic matching per cluster** — searching within each keyword group separately —  
-but this approach didn’t generalize well and produced unstable matches.  
+Initially, we tested two approaches for semantic retrieval:
 
-By building a **FAISS HNSW index** across all keywords, the graph-based structure achieved  
-**much stronger and more consistent results** for semantic similarity and article-to-keyword mapping.  
-In short: *the FAISS-based graph simply worked better*.
+1. **Pure Embeddings + Cosine Similarity** — a direct method comparing the article vector with all keyword embeddings.  
+2. **FAISS HNSW Graph** — an approximate nearest-neighbor search over all keyword vectors.
 
----
+Both methods produced **strong and meaningful results** in terms of semantic relevance.  
+However, as the number of keywords increased, the **FAISS graph performed better**,  
+mainly due to its **speed and scalability**, allowing efficient searches even with thousands of entries.  
+
+In summary: *for smaller datasets, both work equally well;  
+for larger keyword bases, the FAISS-based approach is faster and more robust.*
+
 
 ## ⚙️ What It Does
 
