@@ -29,7 +29,10 @@ The app lets you:
 - ✨ Optionally summarize it with **GPT-4o** or **GPT-4o-mini** before searching
 - 🧾 Retrieve the **most relevant keywords** from your dataset
 
----
+Before searching, the app prompts you to **upload your mini keyword dataset** —  
+a simple **CSV file** with **one column named `keyword`** containing all the terms or phrases  
+that will form the semantic search space.
+
 
 ## 📁 Project Structure
 
